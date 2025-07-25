@@ -1097,11 +1097,8 @@ function draw() {
 
             if (cutsceneTimer >= 39) {
               if (!window.playAgainBtn) {
-                window.playAgainBtn = p.createButton('Play Again?');
-                window.playAgainBtn.position(
-                  p.width / 2 - 60,
-                  p.height / 2 + 20
-                );
+                window.playAgainBtn = createButton('Play Again?');
+                window.playAgainBtn.position(width / 2 - 60, height / 2 + 20);
                 window.playAgainBtn.size(120, 32);
                 window.playAgainBtn.style('font-family', 'monospace');
                 window.playAgainBtn.mousePressed(() => {
