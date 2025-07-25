@@ -1151,6 +1151,10 @@ function debugOverlay() {
 
 /* ---------- input/handlers ---------- */
 function mousePressed() {
+  if (getAudioContext().state !== 'running') {
+    userStartAudio();
+  }
+
   const v = screenToWorld(mouseX, mouseY);
   if (Debug.brush) {
     // screen → world
@@ -1165,7 +1169,6 @@ function mousePressed() {
     player.tryLatch();
     return;
   }
-  userStartAudio();
   volCtrl.mousePressed(mouseX, mouseY); // check volume control
   fsBtn.mousePressed(toggleFullscreen);
 }
