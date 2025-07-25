@@ -1151,9 +1151,6 @@ function debugOverlay() {
 
 /* ---------- input/handlers ---------- */
 function mousePressed() {
-  if (getAudioContext().state !== 'running') {
-    getAudioContext().resume();
-  }
   const v = screenToWorld(mouseX, mouseY);
   if (Debug.brush) {
     // screen → world
