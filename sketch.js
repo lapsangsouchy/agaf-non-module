@@ -796,7 +796,7 @@ function draw() {
     // fill
     fill('#FFFFFF');
 
-    text('A Game About\n' + 'Failing', width / 2, height * 0.25 + titleFloat);
+    text('Failing Up', width / 2, height * 0.25 + titleFloat);
     pop();
 
     // 3) draw your two intro buttons underneath
@@ -1076,7 +1076,7 @@ function draw() {
               textAlign(CENTER, CENTER);
               textSize(48);
               fill(255, titleAlpha);
-              text('A Game About Failing', width / 2, height / 2 - 150);
+              text('Failing Up', width / 2, height / 2 - 150);
               pop();
             }
             if (cutsceneTimer >= 35) {
